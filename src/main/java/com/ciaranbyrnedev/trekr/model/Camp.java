@@ -9,7 +9,7 @@ public class Camp {
 
 	private long id;
 	private String campName;
-	private String campDetails;
+	private String campLocation;
 	private Date created;
 	private String author;
 	
@@ -17,11 +17,11 @@ public class Camp {
 		
 	}
 
-	public Camp(long id, String campName, String campDetails, String author) {
+	public Camp(long id, String campName, String campLocation, String author) {
 		
 		this.id = id;
 		this.campName = campName;
-		this.campDetails = campDetails;
+		this.campLocation = campLocation;
 		this.created = new Date();
 		this.author = author;
 	}
@@ -38,11 +38,11 @@ public class Camp {
 	public void setCampName(String campName) {
 		this.campName = campName;
 	}
-	public String getCampDetails() {
-		return campDetails;
+	public String getCampLocation() {
+		return campLocation;
 	}
-	public void setCampDetails(String campDetails) {
-		this.campDetails = campDetails;
+	public void setCampLocation(String campLocation) {
+		this.campLocation = campLocation;
 	}
 	public Date getCreated() {
 		return created;

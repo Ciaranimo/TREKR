@@ -12,7 +12,7 @@ public class CampService {
 	private Map<Long, Camp> camps = DatabaseClass.getCamps();
 
 	public CampService(){
-		camps.put(1L, new Camp(1, "Kamp Krusty ", "camp details", "Krusty"));
+		camps.put(1L, new Camp(1, "Kamp Krusty ", "camp location", "Krusty"));
 		camps.put(2L, new Camp(2, "Kamp jsjsj ", "camp details", "Jim"));
 
 	}

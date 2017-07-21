@@ -9,12 +9,12 @@ import com.ciaranbyrnedev.trekr.model.Profile;
 public class DatabaseClass {
 	
 	public static Map <Long, Camp> camps = new HashMap<>();
-	public static Map <Long, Profile> profiles = new HashMap<>();
+	public static Map <String, Profile> profiles = new HashMap<>();
 	
 	public static Map<Long, Camp> getCamps() {
 		return camps;
 	}
-	public static Map<Long, Profile> getProfiles() {
+	public static Map<String, Profile> getProfiles() {
 		return profiles;
 	}
 
