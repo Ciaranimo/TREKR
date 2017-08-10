@@ -59,7 +59,6 @@ public class CampResource {
 	
 	@DELETE
 	@Path("/{campId}")
-	@Consumes(MediaType.APPLICATION_JSON)
 	public void deleteCamp(@PathParam("campId") long campId){
 		campService.removeCamp(campId);
 	}
@@ -70,6 +69,11 @@ public class CampResource {
 		return campService.getCamp(campId);
 	}
 	
+	// When path matches it hands over to ReviewResource
+	@Path("/{campId}/reviews")
+	public ReviewResource getReviewResource(){
+		return new ReviewResource();
+	}
 	
 	
 }
