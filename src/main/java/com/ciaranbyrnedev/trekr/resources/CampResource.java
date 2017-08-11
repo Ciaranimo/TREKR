@@ -25,7 +25,8 @@ import com.ciaranbyrnedev.trekr.resources.beans.CampFilterBean;
 public class CampResource {
 	
 	CampService campService = new CampService();
-	
+	// checks to see if there is a query param in the request and acts accordingly
+	// For filtering year and location etc
 	@GET
 	public List<Camp> getCamps(@BeanParam CampFilterBean filterBean){
 		try{

@@ -18,6 +18,8 @@ public class ReviewService {
 		return new ArrayList<Review>(reviews.values());
 	}
 	
+
+	
 	public Review getReview(long campId, long reviewId){
 		Map<Long, Review> reviews = camps.get(campId).getReviews();
 		return reviews.get(reviewId);
